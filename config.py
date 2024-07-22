@@ -21,14 +21,13 @@ DISC_PATH = "disc.pth.tar"
 GEN_PATH = "gen.pth.tar"
 
 LOAD_MODEL = False
-#-------------------------------------------------------------
+
 mytfsm = transforms.Compose([       # Tensor
     transforms.Resize((IMAGE_SIZE,IMAGE_SIZE)),
     transforms.ToTensor(), 
     transforms.Normalize(mean, std)   
 ])
 
-#-------------------------------------------------------------
 
 def save_example(gen, loader, epoch, folder):
     x, y = next(iter(loader))
