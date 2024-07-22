@@ -16,8 +16,8 @@ class mydataset(Dataset):
         path = self.list_file[index]
         path = os.path.join(self.map_path, path)
         img = Image.open(path).convert("RGB")
-        x = np.array(img)[:, :600, :]
-        y = np.array(img)[:, 600:, :]
+        x = np.array(img)[:, :256, :]
+        y = np.array(img)[:, 256:, :]
         x = config.mytfsm(Image.fromarray(x))
         y = config.mytfsm(Image.fromarray(y))
         return x, y
