@@ -20,7 +20,7 @@ NUM_EPOCH = 100
 DISC_PATH = "/content/drive/MyDrive/gan_checkpoints/disc.pth.tar"
 GEN_PATH = "/content/drive/MyDrive/gan_checkpoints/gen.pth.tar"
 
-LOAD_MODEL = False
+LOAD_MODEL = True
 
 mytfsm = transforms.Compose([       # Tensor
     transforms.Resize((IMAGE_SIZE,IMAGE_SIZE)),

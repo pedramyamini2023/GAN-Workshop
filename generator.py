@@ -75,8 +75,11 @@ def getGenerator():
     opt = optim.Adam(gen.parameters(), lr=config.LEARNING_RATE, betas=(.5, .999))
     scr = torch.cuda.amp.GradScaler()
 
-    if config.LOAD_MODEL:
-        config.load_checkpoint(config.GEN_PATH, gen, opt, config.LEARNING_RATE)
+    try:
+        if config.LOAD_MODEL:
+            config.load_checkpoint(config.GEN_PATH, gen, opt, config.LEARNING_RATE)
+    except:
+        pass
 
     return gen, opt, scr
 
