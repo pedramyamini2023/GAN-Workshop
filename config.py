@@ -17,8 +17,8 @@ LEARNING_RATE = 1e-4
 LAMBDA = 100
 NUM_EPOCH = 100
 
-DISC_PATH = "disc.pth.tar"
-GEN_PATH = "gen.pth.tar"
+DISC_PATH = "/content/drive/MyDrive/gan_checkpoints/disc.pth.tar"
+GEN_PATH = "/content/drive/MyDrive/gan_checkpoints/gen.pth.tar"
 
 LOAD_MODEL = False
 
