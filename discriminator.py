@@ -32,8 +32,11 @@ def getDiscriminator():
     opt = optim.Adam(disc.parameters(), lr=config.LEARNING_RATE, betas=(.5, .999))
     scr = torch.cuda.amp.GradScaler()
 
-    if config.LOAD_MODEL:
-        config.load_checkpoint(config.DISC_PATH, disc, opt, config.LEARNING_RATE)
+    try:
+        if config.LOAD_MODEL:
+            config.load_checkpoint(config.DISC_PATH, disc, opt, config.LEARNING_RATE)
+    except:
+        pass
 
     return disc, opt, scr
 
