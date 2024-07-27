@@ -78,7 +78,7 @@ def main():
         config.save_checkpoint(gen, opt_gen, config.GEN_PATH)
         config.save_checkpoint(disc, opt_disc, config.DISC_PATH)
         # save some example
-        config.save_example(gen, loader, epoch, "/kaggle/working/drive/MyDrive/gan_examples")
+        config.save_example(gen, loader, epoch, "/kaggle/working/gan_examples")
 
 
 if __name__ == "__main__":

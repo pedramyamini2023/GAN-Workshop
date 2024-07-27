@@ -17,8 +17,8 @@ LEARNING_RATE = 1e-4
 LAMBDA = 100
 NUM_EPOCH = 100
 
-DISC_PATH = "/kaggle/working/drive/MyDrive/gan_checkpoints/disc.pth.tar"
-GEN_PATH = "/kaggle/working/drive/MyDrive/gan_checkpoints/gen.pth.tar"
+DISC_PATH = "/kaggle/working/gan_checkpoints/disc.pth.tar"
+GEN_PATH = "/kaggle/working/gan_checkpoints/gen.pth.tar"
 
 LOAD_MODEL = True
 
