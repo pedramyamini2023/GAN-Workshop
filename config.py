@@ -15,7 +15,7 @@ std = [.5, .5, .5]
 num_workers = 2
 LEARNING_RATE = 1e-4
 LAMBDA = 100
-NUM_EPOCH = 100
+NUM_EPOCH = 40
 
 DISC_PATH = "/kaggle/working/gan_checkpoints/disc.pth.tar"
 GEN_PATH = "/kaggle/working/gan_checkpoints/gen.pth.tar"
