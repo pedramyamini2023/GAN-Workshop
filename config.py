@@ -15,7 +15,7 @@ std = [.5, .5, .5]
 num_workers = 2
 LEARNING_RATE = 1e-4
 LAMBDA = 100
-NUM_EPOCH = 40
+NUM_EPOCH = 30
 
 DISC_PATH = "/content/drive/MyDrive/gan_checkpoints/disc.pth.tar"
 GEN_PATH = "/content/drive/MyDrive/gan_checkpoints/gen.pth.tar"
